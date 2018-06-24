@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+	<style type="text/css">
+		input{
+			width: 20%;
+		}
+		body{
+			margin: auto;
+			margin-top: 150px;
+			background: cyan;
+		}
+		#calculadora{
+			background: white;
+			width: 350px;
+			margin:auto;
+			padding: 25px;
+			align-content: center;
+			border: solid black 1px;
+			border-radius: 20px;		
+		}
+		p{
+			text-align: center;
+			background: gray;
+			border: solid black 1px;
+
+		}
+	</style>
+	<script type="text/javascript" src="Calc_Jur_comp.js"></script>
+</head>
+<body>
+	<center>CALCULADORA</center>
+	<div id="calculadora">
+		<center>Valor Inicial<br>
+		<input type="number" id="valor" value="0" \>
+		<br><br>
+		% de Juros<br>
+		<input type="number" id="juros" value="0" \>
+		<br><br>
+		Tempo<br>
+		<input type="number" id="tempo" value="0" \>
+		<br><br>
+		<button onclick="calculo()">Calcular</button>
+		<br><br>
+		<p id="result"></p>
+		
+	</center></div>
+</body>
+</html>
